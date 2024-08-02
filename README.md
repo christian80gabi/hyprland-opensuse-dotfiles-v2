@@ -2,6 +2,13 @@
 
     Simple Hyprland dotfiles for OpenSUSE
 
+
+## Screenshots
+
+![Desktop with Alacritty Opens](/screenshots/alacritty.png "Desktop with Alacritty Opens")
+
+![Desktop with Wofi Opens](/screenshots/wofi.png "Desktop with Wofi Opens")
+
 ## Notes
 
 It is preferable to have already set up one of the famous desktop environment KDE (preferable) | GNOME. So then you'll already have installed and configured a File manager dolphin (preferable) | nautilus, a Network Manager, a terminal emulator (Alacritty)...
