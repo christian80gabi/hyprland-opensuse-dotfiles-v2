@@ -1,13 +1,9 @@
 {
-    "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    // "gtk-layer-shell": "false",
-    // Choose the order of the modules
+    "layer": "top",
+    "height": 30,
     "modules-left": ["custom/launcher", "custom/files", "custom/terminal", "custom/browser","hyprland/workspaces", "tray"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/zypper", "network", "bluetooth", "cpu", "memory", "temperature", "backlight", "battery", "pulseaudio", "custom/layout", "clock", "custom/notification", "custom/power"],
+    "modules-right": ["custom/zypper", "network", "bluetooth", "cpu", "memory", "backlight", "battery", "pulseaudio", "custom/layout", "clock", "custom/notification", "custom/power"],
     "sway/mode": {
         "format": " {}"
     },
@@ -31,22 +27,6 @@
         "on-click": "exec alacritty -e sudo sh -c 'zypper ref; zypper dup; pkill -SIGRTMIN+8 waybar'",
         "signal": 8
     },
-    // Modules configuration
-    //  "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -78,7 +58,7 @@
         "actions": {
             "on-click-right"    : "mode",
             "on-scroll-up"      : "shift_up",
-            "on-scroll-down"      : "shift_down"
+            "on-scroll-down"    : "shift_down"
         },
         "interval": 10
     },
@@ -105,7 +85,7 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 95,
             "warning": 30,
             "critical": 15
         },
