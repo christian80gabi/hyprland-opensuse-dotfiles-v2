@@ -27,16 +27,19 @@ $ cd hyprland-opensuse-dotfiles
 $ chmod +x ./install-dependencies.sh
 
 $ ./install-dependencies.sh
+
+$ cp lock-wallpaper.jpg $HOME/Pictures/wallpapers
 ```
 
 This is going to install some dependencies for an environment for more appealing and usable. Those are:
 
 - [openSUSEway] and dependencies and design
 - [Hyprland] and [hyprpaper]
-- [alacritty]
-- [waybar]
-- [swaylock]
-- [wofi]
+- [alacritty] : Terminal
+- [waybar] : Task bar
+- [swaylock] : Lock screen
+- [wofi] : Launcher
+- [blueman] : GTK bluetooth management
 
 [alacritty]: https://alacritty.org/
 [hyprpaper]: https://wiki.hyprland.org/Useful-Utilities/Wallpapers/#hyprpaper
@@ -59,6 +62,7 @@ $ tree
 |____ scripts
 |____ waybar
 |____ wofi
+|____ swaylock
 |____ ...
 ```
 
