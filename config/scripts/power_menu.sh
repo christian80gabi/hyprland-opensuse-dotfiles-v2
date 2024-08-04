@@ -12,7 +12,7 @@ case $selected in
   suspend)
     exec systemctl $selected;;
   lock)
-    swaylock;;
+    hyprlock;;
   logout)
     hyprctl dispatch exit;;
 esac
