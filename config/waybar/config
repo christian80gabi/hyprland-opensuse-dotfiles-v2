@@ -101,7 +101,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""]
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -126,8 +126,8 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
-        "format-ethernet": "",
-        "format-linked": "",
+        "format-ethernet": "󰈀",
+        "format-linked": "󰈁",
         "format-disconnected": "⚠",
         "format-alt": "{ifname} {essid} ({signalStrength}%)"
     },
@@ -151,11 +151,11 @@
         "format": "{icon}",
         "format-alt": "{volume} {icon}",
         "format-alt-click": "click-right",
-        "format-muted": "",
+        "format-muted": "",
         "format-icons": {
             "headphones": "",
-            "handsfree": "",
-            "headset": "",
+            "handsfree": "󰥰",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
@@ -163,7 +163,7 @@
         },
         "scroll-step": 10,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-right": "pavucontrol",
+        "on-click-right": "pavucontrol-qt",
         "tooltip": false
     },
     "custom/scratchpad": {

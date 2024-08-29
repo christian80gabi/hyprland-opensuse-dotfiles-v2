@@ -1,21 +1,19 @@
-# HYPRLAND-OPENSUSE-DOTFILES V2
+# HYPRLAND-DOTFILES V2 (Arch Linux)
 
-    Simple Hyprland dotfiles for OpenSUSE
+    Simple Hyprland dotfiles for Arch Linux
 
 
 ## Screenshots
 
-![Desktop with Alacritty Opens](/screenshots/alacritty.png "Desktop with Alacritty Opens")
+![Desktop with Kitty](/screenshots/kitty.png "Desktop with Kitty")
 
-![Desktop with Wofi Opens](/screenshots/wofi.png "Desktop with Wofi Opens")
+![Desktop with Wofi](/screenshots/wofi.png "Desktop with Wofi")
 
 ## Notes
 
-It is preferable to have already set up one of the famous desktop environment KDE (preferable) | GNOME. So then you'll already have installed and configured a File manager dolphin (preferable) | nautilus, a Network Manager, a terminal emulator (Alacritty)...
+It is preferable to have already set up one of the famous desktop environment KDE (preferable) | GNOME. So then you'll already have installed and configured a File manager dolphin (preferable) | nautilus, a Network Manager, a terminal emulator...
 
-> This is an updated version and preferred of my previous project [hyrland-opensuse-dotfiles](https://github.com/christian80gabi/hyprland-opensuse-dotfiles)
-
-To end up with the exact configuration as me, please consider use this on an openSUSE with KDE 6 desktop environment. And even you are not planning to use **Sway**. Installing **openSUSEway** makes to process even easier.
+To end up with the exact configuration as me, please consider use this on an openSUSE with KDE 6 desktop environment.
 
 ## Installation
 
@@ -24,30 +22,26 @@ $ git clone https://github.com/christian80gabi/hyprland-opensuse-dotfiles-v2.git
 
 $ cd hyprland-opensuse-dotfiles
 
+$ git switch arch-linux
+
 $ chmod +x ./install-dependencies.sh
 
 $ ./install-dependencies.sh
-
-$ cp lock-wallpaper.jpg $HOME/Pictures/wallpapers
 ```
 
 This is going to install some dependencies for an environment for more appealing and usable. Those are:
 
-- [openSUSEway] and dependencies and design
 - [Hyprland] and [hyprpaper]
-- [alacritty] : Terminal
+- [kitty] : Terminal
 - [waybar] : Task bar
-- [swaylock] : Lock screen
+- [hyprlock] : Lock screen
 - [wofi] : Launcher
 - [blueman] : GTK bluetooth management
 
-[alacritty]: https://alacritty.org/
 [hyprpaper]: https://wiki.hyprland.org/Useful-Utilities/Wallpapers/#hyprpaper
 [Hyprland]: https://wiki.hyprland.org/Useful-Utilities/Must-have/
 [kitty]: https://github.com/kovidgoyal/kitty
 [waybar]: https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar
-[waylock]: https://github.com/ifreund/waylock
-[swaylock]: https://github.com/swaywm/swaylock
 [wofi]: https://wiki.hyprland.org/Useful-Utilities/App-Launchers/#wofi
 
 After all the dependencies installed. Then, copy the content of  `config` in your `~/.config`.
@@ -57,12 +51,12 @@ $ tree
 
 . ~/.config/
 |____ ...
+|____ dunst
 |____ hypr
 |____ qt6ct
 |____ scripts
 |____ waybar
 |____ wofi
-|____ swaylock
 |____ ...
 ```
 

@@ -1,43 +1,35 @@
 * {
     border:        none;
-    border-radius: 0;
-    font-family:   "Source Sans Pro", "FontAwesome 6 Free";
-    font-size:     15px;
+    border-radius: 10;
+    font-family:   "JetBrains Mono", "Source Sans Pro", "FontAwesome 6 Free";
+    font-size:     12px;
     box-shadow:    none;
     text-shadow:   none;
     transition-duration: 0s;
 }
 
 window#waybar {
-    color: rgba(53, 185, 171, 1);
-    background-color: rgba(23, 63, 79, 0.4);
-    border-bottom: 2px solid rgba(53, 185, 171, 0.1);
+    color: rgba(247, 247, 247, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 171, 0.1);
 }
 
 window#waybar.solo {
-    color: rgba(53, 185, 171, 1);
+    color: rgba(247, 247, 247, 0.8);
 }
 
-#workspaces {
-    margin: 0 5px;
+#workspaces button{
+    border-radius: 15px;
+    padding: 0 15px;
+    font-weight: bolder;
+    background-color: #181818;
 }
 
-#custom-scratchpad {
-    margin: 0px	5px;
-    padding: 0px 5px;
-}
-
-#workspaces button {
-    padding: 0 5px;
-    color: rgba(53, 185, 171, 1);
-}
-
-#workspaces button.focused {
-    color: rgba(115, 186, 37, 1);
-}
-
-#workspaces button.visible {
-    color: rgba(115, 186, 37, 1);
+#workspaces button.active, 
+#workspaces button.focused{
+    padding: 0 15px;
+    box-shadow: rgba(33, 164, 223, 1) 1px 0px 0px 0px;    
+    background: rgb(0, 25, 32);
 }
 
 #workspaces button.urgent {
@@ -61,12 +53,12 @@ window#waybar.solo {
 #custom-browser,
 #custom-power,
 #backlight {
-    margin: 0px 6px 0px 10px;
-/*    min-width: 30px;*/
+    margin: 0px 6px 0px 15px;
+    min-width: 15px;
 }
 
 #clock {
-    margin: 0px 6px 0px 10px;
+    margin: 0px 6px 0px 15px;
 }
 
 #battery.warning {
@@ -78,7 +70,7 @@ window#waybar.solo {
 }
 
 #battery.charging {
-    color: rgba(217, 216, 216, 1);
+    color: rgb(166, 231, 186);
 }
 
 #bluetooth.disabled {

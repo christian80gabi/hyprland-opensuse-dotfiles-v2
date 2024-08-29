@@ -1,7 +1,12 @@
 !/usr/bin/env bash
 
-echo "Installing openSUSEway and dependencies. (This will configure a lot for you)"
-sudo zypper install -y --recommends openSUSEway patterns-openSUSEway
+echo "Update System..."
+sudo pacman -Syu
 
-echo "Installing Hyprland"
-sudo zypper install -y hyprland hyprpaper hyprcursor hypridle hyprlock hyprshot hyprpicker kvantum-manager kvantum-qt5 kvantum-themes qt6ct btop blueman clipman nwg-look
+echo "Installing Hyprland..."
+sudo pacman -S hyprland 
+
+echo "Installing Hyprland environnment..."
+sudo pacman -S hyprpaper hyprcursor hypridle hyprlock
+
+sudo pacman -S dolphin wofi waybar dunst kitty kvantum kvantum-qt5 qt5ct qt6ct btop htop blueman cliphist nwg-look grim brightnessctl pavucontrol-qt fastfetch ttf-jetbrains-mono
